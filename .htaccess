@@ -1,0 +1,5 @@
+# Disable Directory Listings
+Options -Indexes
+
+# Custom 404 Redirect
+ErrorDocument 404 /404.html

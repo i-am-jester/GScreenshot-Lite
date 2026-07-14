@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script>const preloaderStartTime = Date.now();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Privacy Policy - GScreenshot Lite</title>
+  <meta name="title" content="Privacy Policy - GScreenshot Lite">
+  <meta name="description"
+    content="Read the Privacy Policy for the GScreenshot Lite Chrome Extension. Learn how we handle your authorization data and screenshots securely.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://i-am-jester.github.io/GScreenshot-Lite/privacy-policy.html">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-container">
+      <div class="glow"></div>
+      <img src="images/favicon.png" alt="GS" class="main-logo">
+      <span class="loader-lite-badge">LITE</span>
+      <svg class="loader-ring" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="45" />
+        <circle cx="50" cy="50" r="38" style="opacity: 0.3; animation-direction: reverse; animation-duration: 3s;" />
+      </svg>
+    </div>
+  </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-custom" href="index.html">
+        <img src="images/favicon.png" alt="GS" width="22" height="22">
+        GScreenshot <span class="brand-badge">Lite</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom active" href="privacy-policy.html">Privacy Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="terms-and-conditions.html">Terms & Conditions</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Info Page Content -->
+  <main class="info-page-container">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-8">
+          <article class="info-content-card">
+            <h1>Privacy Policy</h1>
+            <p class="text-muted">Last updated: July 14, 2026</p>
+            <hr style="border-color: rgba(255,255,255,0.08); margin-bottom: 30px;">
+
+            <p>This Privacy Policy describes how <strong>GScreenshot Lite</strong> ("we", "our", or "the extension")
+              handles user information when you install and use our browser extension.</p>
+
+            <h2>1. Our Commitment to Your Privacy</h2>
+            <p>We believe that your personal data belongs to you. GScreenshot Lite is designed to be fully client-side:
+              all processing, drawing, and uploading take place entirely inside your own browser window. We do not
+              operate any web servers or databases to store, transmit, or analyze your screenshots.</p>
+
+            <h2>2. Information We Request and Process</h2>
+            <p>To provide screenshot synchronization to your Google Drive account, the extension requests the following
+              OAuth 2.0 authorization scopes:</p>
+            <ul>
+              <li><strong>`https://www.googleapis.com/auth/drive.file`</strong>: This allows the extension to create new
+                image files, update them, and read <em>only</em> the files that were created by the extension itself. We
+                cannot view, modify, or delete any other files or folders in your Google Drive.</li>
+              <li><strong>`https://www.googleapis.com/auth/userinfo.email` &
+                  `https://www.googleapis.com/auth/userinfo.profile`</strong>: We use these scopes to display your email
+                address and profile avatar inside the extension's popup interface, letting you easily see which account
+                is currently linked.</li>
+            </ul>
+
+            <h2>3. Local Storage</h2>
+            <p>The extension stores configuration options, cached profile info (email and avatar link), and the
+              temporary canvas capture state in your browser's local sandbox (`chrome.storage.local`). This data is
+              private and cannot be read by other extensions or websites.</p>
+
+            <h2>4. Third-Party Services</h2>
+            <p>All uploads are made directly to the Google Drive API. Because of this direct integration, your data
+              usage is also governed by the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy
+                Policy</a>.</p>
+
+            <h2>5. Changes to This Policy</h2>
+            <p>We may update this policy periodically. Any changes will be updated directly on this page, and the "Last
+              updated" date will be updated accordingly.</p>
+
+            <h2>6. Contact Us</h2>
+            <p>If you have any questions or feedback regarding our privacy practices, please contact the development
+              team through the contact information provided in the Chrome Web Store Developer console details.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container text-center">
+      <p class="mb-2">Powered by <a href="https://github.com/i-am-jester" target="_blank"
+          style="font-weight: 600; color: var(--accent);">Jester</a></p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <span class="footer-dot">•</span>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <span class="footer-dot">•</span>
+        <a href="terms-and-conditions.html">Terms of Service</a>
+      </div>
+      <p class="mt-3 mb-0" style="font-size: 11px; opacity: 0.5;">&copy; 2026 GScreenshot Lite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
