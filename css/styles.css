@@ -72,6 +72,21 @@ body {
   z-index: 1;
 }
 
+.app-intro-tag {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(47, 180, 246, 0.08);
+  border: 1px solid rgba(47, 180, 246, 0.15);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .hero-title {
   font-size: 48px;
   font-weight: 800;
@@ -194,6 +209,70 @@ body {
   font-size: 14px;
   line-height: 1.55;
   margin: 0;
+}
+
+/* Purpose / OAuth Integration Section */
+.purpose-section {
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.purpose-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 35px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.purpose-card:hover {
+  border-color: var(--border-glow);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.purpose-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  background: rgba(47, 180, 246, 0.1);
+  border: 1px solid rgba(47, 180, 246, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.purpose-card h4 {
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 16px;
+}
+
+.purpose-card p {
+  color: var(--text-muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.purpose-card p:last-child {
+  margin-bottom: 0;
+}
+
+.purpose-scopes-list {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.purpose-scopes-list li {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.55;
+  margin-bottom: 8px;
 }
 
 /* Security / Google OAuth Section */

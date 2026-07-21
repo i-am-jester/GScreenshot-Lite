@@ -55,8 +55,8 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
-      <a class="navbar-brand navbar-brand-custom" href="#">
-        <img src="images/favicon.png" alt="GS" width="22" height="22">
+      <a class="navbar-brand navbar-brand-custom" href="#" aria-label="GScreenshot Lite">
+        <img src="images/favicon.png" alt="GScreenshot Lite Logo" width="22" height="22">
         GScreenshot <span class="brand-badge">Lite</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -80,9 +80,10 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="app-intro-tag">GScreenshot Lite</div>
           <h1 class="hero-title">Better screenshots,<br>saved <span>straight to Drive</span>.</h1>
-          <p class="hero-subtitle">Capture tabs or crop viewport areas instantly. Annotate with premium drawing tools,
-            blur sensitive data, and sync directly to Google Drive. 100% free to use.</p>
+          <p class="hero-subtitle">Capture tabs or crop viewport areas instantly. Annotate with premium drawing tools
+            and sync directly to Google Drive. 100% free to use.</p>
           <div class="hero-buttons">
             <a href="https://chromewebstore.google.com/" target="_blank" class="btn btn-accent">Add to Chrome</a>
           </div>
@@ -149,6 +150,58 @@
             <h4>Direct Drive Sync</h4>
             <p>No storage limits, no links to expire. Save screenshots directly to your personal Google Drive account.
             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Purpose & OAuth Integration Section (Crucial for Google Verification) -->
+  <section id="purpose" class="purpose-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Application Purpose & Google Integration</h2>
+        <p class="section-desc">Learn why GScreenshot Lite requires specific permissions and how your data is handled.
+        </p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="purpose-card h-100">
+            <div class="purpose-icon-wrapper">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.663 17h4.673M12 3v1m6.364.364l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h4>Core Purpose of GScreenshot Lite</h4>
+            <p><strong>GScreenshot Lite</strong> is a lightweight productivity tool designed to help users capture
+              browser tab screenshots, crop specific viewport areas, and annotate screenshots with drawing tools
+              (rectangles, arrows, text) directly within their browser.</p>
+            <p>The app is tailored for professionals, educators, and developers who need a frictionless way to capture
+              visual feedback and save it securely without relying on third-party cloud hosting servers.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="purpose-card h-100">
+            <div class="purpose-icon-wrapper">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+              </svg>
+            </div>
+            <h4>How We Use Google Drive Scopes</h4>
+            <p>To provide a seamless saving experience, GScreenshot Lite integrates with Google Drive APIs. When you
+              authorize the extension via the Google OAuth consent screen, the app requests the following scope:</p>
+            <ul class="purpose-scopes-list">
+              <li><strong><code>.../auth/drive.file</code> (View and manage Google Drive files and folders that you have
+                  opened or created with this app)</strong>: We use this scope solely to create a dedicated
+                "GScreenshot-Lite" folder in your Google Drive and upload your captured/edited images directly to it.
+              </li>
+            </ul>
+            <p><strong>Data Privacy & Security:</strong> Because we use the restricted <code>drive.file</code> scope,
+              GScreenshot Lite has absolutely no access to any of your other existing Google Drive files, folders, or
+              personal data. The entire authorization process and image uploading are performed directly client-side in
+              your browser. No files or access tokens are ever sent to our servers.</p>
           </div>
         </div>
       </div>
