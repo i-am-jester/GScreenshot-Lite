@@ -404,6 +404,7 @@ body {
 
 /* --- PRELOADER STYLES --- */
 #preloader {
+  display: none !important; /* Temporarily disabled for Google Verification */
   position: fixed;
   top: 0;
   left: 0;
